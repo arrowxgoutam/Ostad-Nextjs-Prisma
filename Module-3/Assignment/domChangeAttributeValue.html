@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Change Attribute Value</title>
+</head>
+<body>
+
+    <img 
+    id="myImg"
+    src="https://cdn.rabbil.com/photos/images/2022/11/04/rabbilVai.png" 
+    alt=""
+    width="200px"
+    height="200px"
+    >
+    <br/>
+    <button onclick="changeImage()">Click To Change Image</button>
+
+
+   
+    <script>
+            function changeImage(){
+                var myImg = document.getElementById('myImg');
+
+                myImg.src = "https://cdn.rabbil.com/photos/images/2022/11/04/whyChoose.png"
+                }
+    </script>
+    
+</body>
+</html>

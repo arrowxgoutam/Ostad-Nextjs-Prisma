@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Query Selector</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1" class="paragraph">Weve taken Lorem Ipsum to the next level with our HTML-Ipsum tool. As you can see</p><br><br>
+    <p id="p2" class="paragraph">this Lorem Ipsum is tailor-made for websites and other online projects that are based in HTML</p><br><br>
+    <p id="p3" class="paragraph">excerpts to begin with, but you always have to spend an </p><br><br>
+    <p id="p4" class="paragraph">annoying extra minute or two formatting it properly for the web.</p><br><br>
+    <p id="p5" class="paragraph">Maybe you have a custom-styled ordered list you want to show off</p><br><br>
+    
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor(){
+            var paragraph = document.querySelector('.paragraph');
+            paragraph.classList='red';
+        }
+    </script>
+
+
+</body>
+</html>

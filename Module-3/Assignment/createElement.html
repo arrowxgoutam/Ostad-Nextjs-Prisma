@@ -13,13 +13,16 @@
 
     <script>
         function AppendElement(){
+            
             var myList = document.getElementById('myList');
-            var list = document.createElement('li');
 
-            var items = "Hello JavaScript"
-               for (i = 0; i < 5; i++) {
-                    document.write(`<p>${i+1}: ${hello}</p>`);
-               }
+                for (i = 0; i < 5; i++) {
+                var list = document.createElement('li');
+                list.innerHTML = [i+1];
+                myList.appendChild(list)
+            }
+
+            
         }
     </script>
     
