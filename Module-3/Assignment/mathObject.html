@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+
+    <button onclick="arrySqu()">click</button>
+    <p id="showResultId"></p>
+
+    <script>
+
+        function arrySqu(){
+            var numArry = [3, 5, 6, 4, 5, 2];
+            var sum = 0;
+
+            for (let i = 0; i < numArry.length; i += 1) {
+                sum += numArry[i];
+            }
+
+            var result = Math.sqrt(sum);
+
+            var showResult = document.getElementById('showResultId');
+            showResult.innerHTML=result;
+        }
+
+    </script>
+    
+</body>
+</html>

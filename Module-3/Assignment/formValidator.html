@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Working with Form</title>
+</head>
+<body>
+
+    <form name="myform" onsubmit="return validateform()">
+        <label>Name:</label><br/>
+        <input type="text" name="name"><br/><br/>
+
+        <label>Email:</label><br/>
+        <input type="email" name="email"><br/><br/>
+
+        <label> Password:</label><br/>
+        <input type="password" name="password"><br/> <br/> 
+
+        <label> Confirm Password:</label><br/>
+        <input type="password" name="conpassword"><br/> <br/> 
+
+        <button type="submit">Submit</button>
+        </form>  
+
+        <script>
+            function validateform(){  
+                var name=document.myform.name.value;  
+                var password=document.myform.password.value;  
+                
+                if (name==null || name==""){  
+                alert("Name should not be empty and should contain only letters.");  
+                return false;  
+                }else if(password.length<6){  
+                alert("Password must be at least 6 characters long.");  
+                return false;  
+                }  
+                }
+        </script>
+    
+</body>
+</html>

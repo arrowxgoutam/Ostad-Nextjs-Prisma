@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document</title>
+</head>
+<body>
+
+    <p id="paragraphId">Learn With Rabbil is a top leading edutech platform for software development. We provide online courses for majors in mobile & web development. Research & development, teaching, and community leading is our vision . Our specialty is industry-oriented teaching processes, guidelines, study plans, and classes with resourceful content. Learn confidently with us software industry needs quality developers.</p>
+
+    <button onclick="changeParagraph()">Click To Change</button>
+
+    <script>
+        function changeParagraph(){
+            var paragraph = document.getElementById('paragraphId');
+            paragraph.innerHTML="Rabbil Hasan is our core instructor. He is working on web & mobile application development for more than 8 years. He started his programming instructor career at Bangladesh ICT Ministry in a software development program. After that, he plays a great role as a software development instructor at CBA-IT, STEPUP-IT, TexLab, and Northbengal IT. Presently he is working at IDLC Finance Ltd as a senior software engineer. Working with country-leading fintech solutions."
+        }
+    </script>
+    
+</body>
+</html>

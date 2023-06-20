@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a statement to send a POST request</title>
+</head>
+<body>
+
+    <button onclick="handleResponse()">Fecth Post Data</button>
+
+    <script>
+        function handleResponse(){
+            var URL = 'https://api.example.com/data';
+            var data = { name: "John", age: 30 };
+
+            var Config = {
+                method: 'POST',
+                headers: {'Accept':'application/json', 'Content-Type':'application/json'},
+                body:JSON.stringify(data)
+            };
+
+            fetch(URL, Config)
+            .then(response => response.json())
+            .then(result => console.log(result))
+            .catch(error => console.log(error));
+
+        }
+    </script>
+    
+</body>
+</html>

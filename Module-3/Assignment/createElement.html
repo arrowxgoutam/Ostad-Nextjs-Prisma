@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element & Append Element</title>
+</head>
+<body>
+
+    <ul id="myList"></ul>
+    <button onclick="AppendElement()">Click To Add List</button>
+
+    <script>
+        function AppendElement(){
+            var myList = document.getElementById('myList');
+            var list = document.createElement('li');
+
+            var items = "Hello JavaScript"
+               for (i = 0; i < 5; i++) {
+                    document.write(`<p>${i+1}: ${hello}</p>`);
+               }
+        }
+    </script>
+    
+</body>
+</html>
